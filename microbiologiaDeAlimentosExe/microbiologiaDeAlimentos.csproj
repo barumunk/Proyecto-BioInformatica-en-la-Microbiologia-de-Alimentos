@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{043E9E9F-6894-4C25-ADEB-DB2F764E9127}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>microbiologiaDeAlimentos</RootNamespace>
+    <AssemblyName>microbiologiaDeAlimentos</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAplicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAplicaciones.Designer.cs">
+      <DependentUpon>FormAplicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesarrollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesarrollo.Designer.cs">
+      <DependentUpon>FormDesarrollo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIntroduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIntroduccion.Designer.cs">
+      <DependentUpon>FormIntroduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPractica.Designer.cs">
+      <DependentUpon>FormPractica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResumen.Designer.cs">
+      <DependentUpon>FormResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPMP 2013.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPMP 2013.Designer.cs">
+      <DependentUpon>IPMP 2013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo Crecimiento de bacterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modelo Crecimiento de bacterias.Designer.cs">
+      <DependentUpon>Modelo Crecimiento de bacterias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAplicaciones.resx">
+      <DependentUpon>FormAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesarrollo.resx">
+      <DependentUpon>FormDesarrollo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIntroduccion.resx">
+      <DependentUpon>FormIntroduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPractica.resx">
+      <DependentUpon>FormPractica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResumen.resx">
+      <DependentUpon>FormResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPMP 2013.resx">
+      <DependentUpon>IPMP 2013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modelo Crecimiento de bacterias.resx">
+      <DependentUpon>Modelo Crecimiento de bacterias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\microbiologia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\microbiologia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\microbiologia3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Captura.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
